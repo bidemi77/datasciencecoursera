@@ -1,0 +1,25 @@
+# History of R
+# R is a dialect of S.
+# S was initiated in 1976.
+/S Philosophy
+# 'Outgrow'
+# Features of R.
+# Syntax similar to R 
+# Semantic of R is similar to S.
+
+# 4000 packages.
+# htt://bioconductor.org
+
+#http://cran.r-project.org
+An introduction to R'
+Writing R Extensions
+R Data Inport/Export
+http://www.r-project.org/doc/bib/R-books.html
+#
+
+Getting Help.
+library(datasets)
+data(airquality)
+cor(airquality)
+
+Error found Cut and paste error message in google.
