@@ -1,0 +1,215 @@
+Control Structure If-Else 
+if (<condition>) {
+     ## do something
+} else{
+     ## do something else 
+}
+
+if(<condition1>) {
+    ## do something
+} else if (condition2>)
+    ## do something different 
+} else {
+       ## do something different
+}
+
+# For Loop
+
+for (i in 1:10) {
+       print (i)
+ }
+ 
+ For 
+ # These three loops have the same behavior.
+ X <- c("a", "b", "c", "d")
+ 
+ for (i in 1:4) {
+      print(X[i])
+ }
+ 
+ for(i in seq_along(x)){
+         print(x[i])
+ }
+ 
+ for (letter in x) {
+         print(letter)
+  }
+  
+  for i(i in 1:4) print(x[i])
+  
+  
+  #  Nested For Loops 
+  
+  x <- matrix(1:6, 2 3)
+  for (i in seq_len(nrow(x))) {
+            print(x[i,j])
+            }
+   }
+   
+   # Control STructure While Loop
+   # While loops begin by testing acondition. If it is true, then they execute the 
+   body of loop.
+   
+   count <- 0
+   while (count < 10) {
+           print(count)
+           count <- count + 1 
+   }
+   
+   z <- 5
+   while (z >= 3 && z <= 10) {
+           print(z)
+           coin <- rbinom(1, 1,0.5)
+           
+           if (coin==1) { ## ranbdom walk
+                     z <- z + 1
+           } else {
+                  z <- z + 1 
+                  }
+# Control Structures Repeat, Next, Break.
+
+Repeat initiates an infinite loop; these are not commonly used in 
+statistical applications but they do have their uses.
+The only way to exit a repeat loop is to call break.
+
+X0 <- 1
+to1 <- le-8
+
+repeat{
+   x1 <1 <- computeEstimate()
+   
+   if(abs(x1 - x0) < tol {
+           break
+  } else   {
+            X0 <- X1
+     }
+}
+
+# Next, Return
+Next is used to skip an iteration of a loop
+
+for (i in 1:100)
+    if(i <=20) {
+           ## Skip the fist 20 iterations
+           next
+      }
+        ## Do something here
+}
+
+#  return signals that a function should exit and return a give value.
+
+# Your first R Function.
+
+add2 <- function(x,y) {
+        x + y
+}
+
+add2(9,7)
+
+above10 <- function(x) {
+         use <- x > 10
+         x[use]
+}
+
+
+above <- function(x, n = 10) {
+        use <- x > n
+        x[use]
+}
+
+columnmean <- function(y) {
+          nc <- col(y)
+          means <- numeric(nc)
+          for (i in 1:nc) {
+                   means[i] <- mean(y[,i])
+         }
+          means
+          
+          
+          Argument Matching 
+          
+          mydata <- mydata <- rnorm(100)
+          sd(mydata)
+          sd(x= mydata, na.rm = FALSE)
+          sd(na.rm=FALSE, x=mydata)
+          sd(na.rm=FALSE, mydata)
+          
+         # The "...' Argument 
+         
+         myplot <- function(x,y type="I", ...) {
+                 plot(x,y, type=type, ...)
+   }
+   
+   > mean 
+      function(x, ...)
+      UseMethod("mean")
+      
+      # The "..." Argument.
+      args(paste)
+      function (...,sep="", collapse=NULL)
+      paste("a", "b", sep=":")
+      
+      paste("a", "b", se=":")
+      
+      # Defining a Function
+      f <- function(a,b=1,c=2,d=NULL) {
+      
+      }
+      
+      3 Lazy Evaluation
+      f <- function(a,b) {
+      a^2
+      f(2)
+      ##[1] 4
+      
+      # Scoping Rules: Symbol binding 
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
